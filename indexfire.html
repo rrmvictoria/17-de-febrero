@@ -58,7 +58,7 @@
 
         readAll = () => db.collection("users").get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
-                    console.log(`${doc.id} => ${doc.data().first}`);
+                    console.log(`${doc.id} => ${doc.data().first} ${doc.data().born}`);
                 });
             });
     </script>
